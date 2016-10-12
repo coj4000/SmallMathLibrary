@@ -6,8 +6,8 @@ This exercise is about implementing some loop-based methods in a class definitio
 
 1. Implement the method Faculty, and use the test to check that it works as expected 
 
-2. Implement the method IntervalSum, and use the test to check that it works as expected 3. Implement the method HighestSquareBelowLimit, 
+2. Implement the method IntervalSum, and use the test to check that it works as expected 
 
-and use the test to check that it works as expected 
+3. Implement the method HighestSquareBelowLimit, and use the test to check that it works as expected 
 
 4. Implement the method IsPrime, and use the test to check that it works as expected (NB: Difficult!) 
