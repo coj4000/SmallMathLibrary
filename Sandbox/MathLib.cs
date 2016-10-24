@@ -14,8 +14,14 @@ namespace Sandbox
         //
         public int Faculty(int n)
         {
+
             // This needs to be changed...
-            return 0;
+            int result = 1;
+            for (int i = n; i >= 1; i--)
+            {
+                result = result * i; 
+            }
+            return result;
         }
 
         // This method must return the sum of the numbers between
@@ -25,8 +31,13 @@ namespace Sandbox
         // NB: If start > end, the sum is 0 (zero)
         public int IntervalSum(int start, int end)
         {
+            int result = 0;
             // This needs to be changed...
-            return 0;
+            for (int i = start; i <= end; i++)
+            {
+                result = result + i;
+            }
+            return result;
         }
 
         // This method must return the highest square number
@@ -38,7 +49,21 @@ namespace Sandbox
         public int HighestSquareBelowLimit(int limit)
         {
             // This needs to be changed...
-            return 0;
+            if (limit > 0)
+            {
+                int value = 0;
+                
+                while ((value + 1) * (value + 1) < limit)
+                {
+                    value++;
+                }
+                
+                return (value * value);
+            }
+            else
+            {
+                return 0;
+            }
         }
 
 
@@ -50,8 +75,27 @@ namespace Sandbox
         // NB: Negative numbers are not prime numbers
         public bool IsPrime(int n)
         {
-            // This needs to be changed...
-            return false;
+            if (n < 2)
+            {
+                return false;
+            }
+            else
+            {
+                
+                bool isPrime = true;
+                int value = 2;
+                
+                while (value < n)
+                {
+                    if ((n % value) == 0) 
+                    {
+                        isPrime = false;
+                    }
+                    value++;
+                }
+
+                return isPrime;
+            }
         }
     }
 }
